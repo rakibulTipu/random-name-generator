@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- js -->
+    <script src="./js/main.js" type="module" defer></script>
+    <title>Random Name Generator</title>
+  </head>
+  <body>
+    <header>
+      <i class="fab fa-youtube"></i>
+      <h1>Code Chanel Random Name Generator</h1>
+    </header>
+
+    <main>
+      <section class="submitSection">
+        <h2 id="forHeading" class="offscreen">Enter your first name</h2>
+
+        <form id="submitForm" class="submitSectionForm">
+          <input
+            required
+            type="text"
+            id="submitSection-textInput"
+            class="submitSection-textInput"
+            maxlength="20"
+            placeholder="Enter First Name"
+            aria-labelledby="formHeading"
+          />
+          <button aria-label="submit" class="submitSectionButton">
+            <i class="fas fa-check"></i>
+          </button>
+        </form>
+
+        <button id="reset">Reset</button>
+      </section>
+
+      <section id="suggestionSection" class="suggestionSection hidden">
+        <h2>Suggestion</h2>
+        <ol></ol>
+        <p>YMMV: Click the name to see if it is already taken.</p>
+      </section>
+    </main>
+  </body>
+</html>
